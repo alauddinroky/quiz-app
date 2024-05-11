@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    height: 100vh;
+    background: linear-gradient(184deg,#8754ff,#8E2DE2);
+  }
+.quiz-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    color: #0e0d0d;
+}
+.container{
+    background-color: #ffffff;
+    padding: 3.1em 1.8em;
+    width: 80%;
+    max-width: 37.5em;
+    border-radius: 0.6em;
+    /* margin: 0 auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; */
+}
+.quiz-board ul{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+/* .quiz-board li{
+    list-style: none;
+    padding: 10px;
+    border: 1px solid rgb(82, 81, 81);
+    cursor: pointer;
+} */
+.quiz-board li{
+    font-size: 0.9em;
+    width: 100%;
+    padding: 1em;
+    margin: 0.3em 0;
+    text-align: left;
+    outline: none;
+    /* background: transparent; */
+    border: 1px solid #c0bfd2;
+    border-radius: 0.3em;
+    list-style: none;
+}
+.quiz-board li:hover{
+    border-color: rgb(168, 113, 113);
+}
+
+.quiz-board button{
+    font-size: 1em;
+  margin-top: 1.5em;
+  background-color: #8754ff;
+  color: #ffffff;
+  padding: 0.7em 1.8em;
+  border-radius: 0.3em;
+  float: right;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+}
+.correct{
+    background-color: #e7f6d5;
+    color: #689f38;
+    border-color: #689f38;
+}
+.wrong{
+    background-color: #ffdde0;
+    color: #d32f2f;
+    border-color: #d32f2f;
+}
+
+.quiz-board h4{
+    margin-top: 10px;
+}
+
+
+        
+.dial{
+    color: #e45b6c;
+    background: #fff;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    padding: 40px;
+    box-shadow: 0 4px 15px -10px  rgba(0, 0, 0, .1), 0 5px 15px 1px rgba(0, 0, 0, .18), 0 0 0 15px #fff, 0 0 0 22px #e45b6c, 0 55px 50px -20px rgba(34,36,38,.25);
+}
+.dial .dial-title{
+    font-size: 3.8em;
+    font-weight: 400;
+    line-height: .8;
+}
+.dial .dial-value{
+    font-size: 1.8em;
+}
